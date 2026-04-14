@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: public.ecr.aws/w0f5g4k6/hello-svc
+  repository: 973397181887.dkr.ecr.us-east-1.amazonaws.com/java-repo
   pullPolicy: IfNotPresent
   tag: dc58bfcdd35d4b384b11ee80cf2a18158838be99
 service:
