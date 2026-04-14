@@ -1,3 +1,4 @@
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: springboot-multisource1
@@ -22,6 +23,10 @@ spec:
 
   - repoURL: https://github.com/sanjay-1992/springboot-helm-chart.git
     targetRevision: main
+    path: helm-charts/springboot
+    helm:
+      valueFiles:
+        - $values/deploy/dev/values.yaml
     path: .
     helm:
       valueFiles:
