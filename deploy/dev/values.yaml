@@ -2,7 +2,7 @@ replicaCount: 2
 image:
   repository: public.ecr.aws/w0f5g4k6/hello-svc
   pullPolicy: IfNotPresent
-  tag: e66021cc11b2d79c7d8d4d817de66e41cab3a890
+  tag: dc58bfcdd35d4b384b11ee80cf2a18158838be99
 service:
   type: ClusterIP
   port: 80
