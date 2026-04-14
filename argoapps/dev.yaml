@@ -16,13 +16,13 @@ spec:
 
   sources:
 
-    - repoURL: https://github.com/sanjay-1992/deploy-argocd-app.git
-      targetRevision: main
-      ref: values
+  - repoURL: https://github.com/sanjay-1992/deploy-argocd-app.git
+    targetRevision: main
+    ref: values
 
-    - repoURL: https://github.com/sanjay-1992/springboot-helm-chart/
-      chart: springboot
-      targetRevision: 0.1.5
-      helm:
-        valueFiles:
-          - $values/deploy/dev/values.yaml
+  - repoURL: https://github.com/sanjay-1992/springboot-helm-chart.git
+    targetRevision: main
+    path: .
+    helm:
+      valueFiles:
+        - $values/deploy/dev/values.yaml
